@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>세계를 경유하다,Travelvia | login</title>
+  <!--css,font,icon링크-->
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="icon" href="../images/A9kCOhP3.ico">
+  <!--js링크-->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="../js/login.js"></script>
+  
+
+</head>
+<body>
+
+  <div class="header_banner">
+    <i class="fa-solid fa-plane-departure banner_icon_airplane"></i>
+    <a href="#!">
+      <p>출국 전 꼭 참고해야 할 입국 규정 및 격리 조건을 확인하세요.</p>
+    </a>
+    <i class="fa-solid fa-xmark banner_icon_close"></i>
+    
+  </div><!--header_banner-->
+
+
+  <header class="header">
+    <nav class="header_gnb">
+      <ul class="main_logo">
+        <a href="../index.html">
+          <img src="./images/main_logo.jpg" alt="메인이미지">
+        </a>
+      </ul>
+      <ul class="gnb">
+        <li>
+          <a href="../login_page/login.html">로그인</a>
+        </li>
+        <li>
+          <a href="./terms_page/terms.html">가입</a>
+        </li>
+        <li>
+          <a href="#!">마이페이지</a>
+        </li>
+        <li>
+          <a href="#!">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </li>
+        <li>
+          <input type="checkbox" id="search_chk">
+          <label for="search_chk">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </label>
+          <div class="search_box">
+            <input type="text" placeholder="트래블비아">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </li>
+      </ul>
+    </nav><!--header_gnb-->
+
+    <hr/>
+
+    <nav class="header_lnb">
+      <li>
+        <a href="#">회사소개</a>
+        <ul class="lnb_introduce">
+          <li>
+            <a href="#!">트래블비아 소개</a>
+          </li>
+          <li>
+            <a href="#!">스텝소개</a>
+          </li>
+          <li>
+            <a href="#!">트래블비아의 약속</a>
+          </li>
+          <li>
+            <a href="#!">트래블비아 카페</a>
+          </li>
+          <li>
+            <a href="#">유튜브 '채널비아'</a>
+          </li>
+          <li>
+            <a href="#">오시는 길</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="../sub_page/subpage.html">2030 배낭여행</a>
+      </li>
+      <li>
+        <a href="#!">모두의 배낭여행</a>
+      </li>
+      <li>
+        <a href="#!">단독 밴 투어</a>
+      </li>
+      <li>
+        <a href="#!">테마여행</a>
+      </li>
+    </nav><!--header_lnb-->
+    <hr/>
+  </header><!--header-->
+
+    
+
+  <div class="login_bg">
+
+
+    <input type="radio" name="login" id="member_login" checked>
+    <input type="radio" name="login" id="non_member_login">
+
+    <div class="login_wrap">
+
+      <div class="title">
+        로그인
+      </div>
+      
+      <div class="login_box">
+        
+        <div class="label_box">
+          <label for="member_login" class="member_login">회원</label>
+          <label for="non_member_login" class="non_member_login">비회원 예약조회</label>
+        </div>
+      
+        <div class="member_login_box">
+
+          <div>
+            <input type="text" placeholder="아이디입력" id="user_id" required>
+          </div>
+
+          <div>
+            <input type="password" placeholder="비밀번호입력" id ="user_pw" required>
+          </div>
+
+          <div class="save_userid">
+            <span class="chk_save"><i class="fa-solid fa-check"></i></span>아이디저장
+          </div>
+
+          <button type="button" value="login" class="btn_login" id="btn_login">
+            로그인
+          </button>
+
+          <div class="search">
+            <span><a href="#!">아이디 찾기</a></span>&nbsp|
+            <span><a href="#!">비밀번호 찾기</a></span>&nbsp|
+            <span><a href="./terms_page/terms.html" target="_blank">회원가입</a></span>
+          </div>
+
+        </div><!--member_login_box-->
+
+        <div class="non_member_login_box">
+
+          <div>
+            <input type="text" placeholder="이름">
+          </div>
+
+          <div>
+            <input type="text" placeholder="예약번호(영문,숫자 포함 12자리)">
+          </div>
+
+          <div class="select_box">
+            <select name="contact_number" id="contact_number">
+              <option value="">연락처</option>
+              <option value="">이메일</option>
+            </select>
+            <input type="text" placeholder="휴대폰번호 & 이메일을 입력해주세요.">
+          </div>
+
+          <p>※예약시 제공한 본인의 연락처 또는 이메일 정보를 입력해주시기 바랍니다.</p>
+          <p>※예약시 고객님의 연락처 또는 이메일을 입력하지 않는 경우, 공식인증예약센터로 전화 문의해 주시기 바랍니다.</p>
+
+          <button type="button" value="reservation" class="btn_login">
+            예약조회
+          </button>
+
+        </div><!--non_member_login_box-->
+      </div><!--login_box-->
+    </div><!--login_wrap-->
+  </div><!--login_bg-->
+
+  <footer class="footer_box_wing">
+    <div class="footer_box">
+      <nav class="footer_sns">
+        <ul>
+          <li><a href="#!">회사소개</a></li>
+          <li><a href="#!">국외여행</a></li>
+          <li><a href="#!">특별약관</a></li>
+          <li><a href="#!">호텔예약</a></li>
+          <li><a href="#!">이용약관</a></li>
+          <li><a href="#!"><b>개인정보처리방침</b></a></li>
+          <li><a href="#!">여행약관<a></li>
+        </ul>
+
+        <ul>
+          <a href="https://pf.kakao.com/_xnLeTC"><img src="./images/icons_kakao.png" alt="카카오이미지"></a>
+          <a href="https://blog.naver.com/travelvia"><img src="./images/icons_blog.png" alt="블로그이미지"></a>
+          <a href="https://www.youtube.com/channel/UClcE6AykDuL44KZ58_elPSw"><img src="./images/icons_youtube.png" alt="유튜브이미지"></a>
+          <a href="https://www.instagram.com/travelvia_europe/"><img src="./images/icons_insta.png" alt="인스타이미지"></a>
+          <a href="https://www.facebook.com/europegallae"><img src="./images/icons_facebook.png" alt="페이스북이미지"></a>
+        </ul>
+      </nav>
+
+      <nav class="footer_cs">
+        <ul>
+          <p><span class="cs_txt">cs center</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp070-4245-0701</p>
+          <p>AM 09:00 ~ PM 18:00</p>
+          <p>DAY OFF (SATURDAY,SUNDAY,HOLIDAY)</p>
+          <p>E-MAIL : travelvia@naver.com</p>
+        </ul>
+      </nav>
+
+      <nav class="footer_info">
+        <ul>
+          <p>
+            트래블비아 서울특별시 마포구 연희로 11, 5층 BS-524호(동교동, 한국특허정보원빌딩)<br/>
+            사업자 등록번호 697-19-01687 관광 사업자 등록번호 : 제 2022-0000021호<br/>
+            통신판매업 신고번호 : 제 2022-서울마포-1307호
+          </p>
+          <p>
+            Copyright c 2022 트래블비아 All rights reserved.
+          </p>
+        </ul>
+
+        <ul>
+          <select>
+            <option selected>LANGUAGE</option>
+            <option>Korean</option>
+            <option>English</option>
+            <option>Japanese</option>
+            <option>Chines</option>
+          </select>
+        </ul>
+      </nav>
+    </div>
+  </footer><!--footer-->
+
+  
+  
+</body>
+</html>

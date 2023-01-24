@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>세계를 경유하다,Travelvia</title>
+  <!--css,font,icon링크-->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="icon" href="./images/A9kCOhP3.ico">
+  <!--js링크-->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/btn_top.js"></script>
+  <!--scrollTo 플러그인-->
+  <script src="./js/js_plugin/jquery.scrollTo.min.js"></script>
+  <!--swiper api 플러그인-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+  <div class="wrap">
+    <input type="checkbox" id="popup_chk01">
+    <input type="checkbox" id="popup_chk02">
+    
+    <div class="popup_box">
+      <div class="popup_txt">
+        <p>지금 트래블비아</p>
+        <p>회원가입하면</p>
+        <p class="sale">100,000원</p>
+        <p>할인쿠폰 증정!</p>
+        <img src="./images/pop_up_img.PNG" alt="팝업이미지">
+        <p class="now_join"><a href="#!">지금 회원가입하기 〉</a></p>
+      </div>
+      <div class="close">
+        <label for="popup_chk01"><div>1일 동안 보지 않음</div></label>
+        <label for="popup_chk02"><div>닫기</div></label>
+      </div>
+    </div><!--popup-->
+
+    <div class="header_banner_box">
+      <div class="header_banner">
+        <i class="fa-solid fa-plane-departure banner_icon_airplane"></i>
+        <a href="#!">
+          <p>출국 전 꼭 참고해야 할 입국 규정 및 격리 조건을 확인하세요.</p>
+        </a>
+        <i class="fa-solid fa-xmark banner_icon_close"></i>
+      </div>
+    </div><!--header_banner-->
+
+    <header class="header">
+      <div class="header_gnb">
+        <div class="main_logo">
+          <a href="./index.html">
+            <img src="./images/main_logo.jpg" alt="메인이미지">
+          </a>
+        </div>
+        <ul class="gnb">
+          <li>
+            <a href="./login_page/login.html">로그인</a>
+          </li>
+          <li>
+            <a href="./login_page/terms_page/terms.html">가입</a>
+          </li>
+          <li>
+            <a href="#!">마이페이지</a>
+          </li>
+          <li>
+            <a href="#!">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+          <li>
+            <input type="checkbox" id="search_chk">
+            <label for="search_chk">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </label>
+            <div class="search_box">
+              <input type="text" placeholder="트래블비아">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </li>
+        </ul>
+      </div><!--header_gnb-->
+
+      <nav class="header_lnb">
+        <li>
+          <a href="#">회사소개</a>
+          <ul class="lnb_introduce">
+            <li>
+              <a href="./sub_page/subpage.html">트래블비아 소개</a>
+            </li>
+            <li>
+              <a href="./sub_page/subpage.html">스텝소개</a>
+            </li>
+            <li>
+              <a href="./sub_page/subpage.html">트래블비아의 약속</a>
+            </li>
+            <li>
+              <a href="./sub_page/subpage.html">트래블비아 카페</a>
+            </li>
+            <li>
+              <a href="./sub_page/subpage.html">유튜브 '채널비아'</a>
+            </li>
+            <li>
+              <a href="./sub_page/subpage.html">오시는 길</a>
+              </li>
+          </ul>
+        </li>
+        <li>
+          <a href="./sub_page/subpage.html">2030 배낭여행</a>
+        </li>
+        <li>
+          <a href="./sub_page/subpage.html">모두의 배낭여행</a>
+        </li>
+        <li class="ban_tour">
+          <a href="./sub_page/subpage.html">단독 밴 투어</a>
+          <div class="ban_tour_box">
+            <div class="ban_tour_txt">
+              우리끼리 여행!
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="./sub_page/subpage.html">테마여행</a>
+        </li>
+      </nav><!--header_lnb-->
+    </header><!--header-->
+
+    <section class="main_txt">
+      <span class="main_txt01">우리의 인생 자체가</span><span class="main_txt02">TRAVEL:여행</span><span class="main_txt01">이고,</span><br/>
+      <span class="main_txt01">세계는 그냥</span><span class="main_txt02">VIA:경유지</span><span class="main_txt01">일 뿐이다.</span>
+    </section>
+    <!--main_txt-->
+
+    <section class="main_visual">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/main_visual01.jpg" alt="메인비주얼이미지01">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/main_visual02.jpg" alt="메인비주얼이미지02">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/main_visual03.jpg" alt="메인비주얼이미지03">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/main_visual04.jpg" alt="메인비주얼이미지04">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+
+    <div class="contents_box">
+      <section class="introduce_box">
+        <div class="introduce_txt_box">
+          <div class="introduce_txt01">
+            why <span style="font-size: 50px; color: #80a3c3;">트래블비아</span><br/>
+            소규모 배낭여행일까요?
+            <span style="font-size: 13px;"><a href="#!" style="color: #80a3c3;"> <더 알아보기></a></span>
+          </div>
+          
+          <div class="introduce_txt02">
+            <p>어렵게 시간을 내서 가는 유럽여행!</p>
+            <p>여행 명소만 훑어보고 돌아오는 여행이 아쉽다면?</p>
+            <p>그렇다고 자유여행은 신경 쓸 것들이 한 두가지가 아니라 꺼려지나요?</p>
+            <p>그렇다면 여행을 즐기는 것에 초점을 맞춘 트래블비아의 소규모 배낭여행을 선택하세요.</p>
+          </div>
+        </div>
+      </section><!--introduce_box01(트래블비아 소개)-->
+
+      <section class="travel_type_box">
+        <div class="title_box">
+          <div class="title_icon"></div>
+          <div class="title">당신이 원하는 여행은?</div>
+        </div>
+
+        <div class="travel_type_box_img">
+          <div class="box_2030">
+            <a href="./sub_page/subpage.html"><div class="img_2030"></div></a>
+            <div class="main_txt_2030">2030 배낭여행</div>
+            <p class="txt_2030">또래끼리 원하는 여행을 원한다면&nbsp<span style="font-size: 13px;"><a href="#!" style="color: #80a3c3"><더 알아보기></a></span></p>
+          </div>
+
+          <div class="box_all">
+            <a href="#!"><div class="img_all"></div></a>
+            <div class="main_txt_all">모두의 배낭여행</div>
+            <p class="txt_all">남여노소 누구나 떠나는 여행을 원한다면&nbsp<span style="font-size: 13px;"><a href="#!" style="color: #80a3c3" ><더 알아보기></a></span></p>
+          </div>
+
+          <div class="box_ban">
+            <a href="#!"><div class="img_ban"></div></a>
+            <div class="main_txt_ban">단독 밴 투어</div>
+            <p class="txt_ban">가족, 친구들과의 여행을 원한다면&nbsp<span style="font-size: 13px;"><a href="#!" style="color: #80a3c3"><더 알아보기></a></span></p>
+          </div>
+        </div>
+      </section><!--travel_type_box(당신이 원하는 여행컨셉)-->
+
+      <section class="review_box">
+        <div class="title_box">
+          <div class="title_icon"></div>
+          <div class="title">솔직한 여행후기&nbsp&nbsp<span style="font-size: 13px;"><a href="#!" style="color: #80a3c3;"><더 알아보기></a></span></div>
+        </div>
+
+        <div class="review_txt_box">
+          <div class="review_img">
+            <img src="./images/cafe.jpg" alt="후기이미지">
+          </div>
+          <div class="review_txt">
+            <h3>폴란드에서의 커피한잔의 여유</h3>
+            <p>
+              여행 중 예쁜 카페가 있어 가이드분께 말씀드리고
+              가진 시간 힐링 그 자체였습니다.
+              <br/>
+              그 때 그 좋았던 감정을 기억하기위해 사진한컷 
+              찍었네요 ~ 이 후기를 보시는 분 들이 있다면
+            </p> 
+            <span style="font-size: 13px;">이**&nbsp&nbsp2022/10/16</span>
+          </div>
+        </div> 
+      </section><!--review_box(후기)-->
+
+      
+      <section class="best_photo_box">
+        <div class="title_box">
+          <div class="title_icon"></div>
+          <div class="title">베스트포토&nbsp&nbsp<span style="font-size: 13px;"><a href="#!" style="color: #80a3c3;"><더 알아보기></a></span></div>
+        </div>
+
+        <div class="best_photo">
+          <nav>
+            <ul>
+              <li><img src="./images/best_photo01.jpg" alt="베스트포토01"></li>
+              <li><img src="./images/best_photo02.jpg" alt="베스트포토02"></li>
+              <li><img src="./images/best_photo03.jpg" alt="베스트포토03"></li>
+            </ul>
+            <ul>
+              <li><img src="./images/best_photo04.jpg" alt="베스트포토04"></li>
+              <li><img src="./images/best_photo05.jpg" alt="베스트포토05"></li>
+              <li><img src="./images/best_photo06.jpg" alt="베스트포토06"></li>
+            </ul>
+            <ul>
+              <li><img src="./images/best_photo07.jpg" alt="베스트포토07"></li>
+              <li><img src="./images/best_photo08.jpg" alt="베스트포토08"></li>
+              <li><img src="./images/best_photo09.jpg" alt="베스트포토09"></li>
+            </ul>
+            <ul>
+              <li><img src="./images/best_photo01.jpg" alt="베스트포토01"></li>
+              <li><img src="./images/best_photo02.jpg" alt="베스트포토02"></li>
+              <li><img src="./images/best_photo03.jpg" alt="베스트포토03"></li>
+            </ul>
+          </nav>
+        </div>
+      </section><!--best_photo(베스트포토)-->
+
+    </div><!--contents_box-->
+
+
+    <section class="banner">
+      <input type="radio" name="banner" id="banner_aurora" checked>
+      <input type="radio" name="banner" id="banner_christmas">
+      <input type="radio" name="banner" id="banner_disney">
+
+      <div class="label_box">
+        <div class="label_position">
+          <label for="banner_aurora"></label>
+          <label for="banner_christmas"></label>
+          <label for="banner_disney"></label>
+        </div>
+      </div>
+
+      <ul class="banner_box">
+        <li class="banner01">
+          <a href="#!"><img src="./images/wide_banner.jpg" alt="오로라이미지"></a>
+          <p class="banner_txt">[오로라를 꿈꾸다] 아이슬란드 배낭여행 8일<br/>
+          #블루라군 #모든 여행자들의 로망</p>
+        </li>
+
+        <li class="banner02">
+          <a href="#!"><img src="./images/event_banner_christmas.jpg" alt="크리스마스이미지"></a>
+          <p class="banner_txt">[MERRY CHRISTMAS] 독일 드레스덴 배낭여행 5일<br/>
+          #크리스마스 마켓 #연말의 설렘</p>
+        </li>
+
+        <li class="banner03">
+          <a href="#!"><img src="./images/event_banner_disney.jpg" alt="디즈니이미지"></a>
+          <p class="banner_txt">[월드 디즈니투어] 디즈니 투어 배낭여행<br/>
+          #디즈니의 현실판 #독일 노이슈반슈타인 성</p>
+        </li>
+      </ul>
+    </section><!--banner-->
+
+  
+    <section class="sch">
+      <div class="title_box">
+        <div class="title_icon"></div>
+        <div class="title">진행중인 일정&nbsp&nbsp<span style="font-size: 13px;"><a href="#!" style="color: #80a3c3;"><더 알아보기></a></span></div>
+      </div>
+      
+      <input type="radio" name="sch" id="sch01" checked>
+      <input type="radio" name="sch" id="sch02">
+      <input type="radio" name="sch" id="sch03">
+      <input type="radio" name="sch" id="sch04">
+      <input type="radio" name="sch" id="sch05">
+      
+      <div class="sch_bg">
+
+        <ul class="sch_left">
+          <li><img src="./images/paris_img.jpg" alt="서유럽이미지"></li>
+          <li><img src="./images/italy_img.jpg" alt="이탈리아이미지"></li>
+          <li><img src="./images/spain_img.jpg" alt="스페인이미지"></li>
+          <li><img src="./images/hungary_img.jpg" alt="동유럽이미지"></li>
+          <li><img src="./images/iceland_img.jpg" alt="아이슬란드이미지"></li>
+        </ul>
+
+        <div class="sch_right">
+
+          <div class="sch_opacity"></div>
+
+          <div class="sch_label_box">
+            
+            <label for="sch01">
+              <a href="#!"><span>2030배낭여행 21기</span>&nbsp&nbsp&nbsp2023.01.26 | in/out 서유럽여행
+              <span><i class="fa-regular fa-plus"></i></span></a>
+            </label>
+            
+            <label for="sch02">
+              <a href="#!"><span>2030배낭여행 22기</span>&nbsp&nbsp&nbsp2023.03.17 | in/out 이탈리아
+              <span><i class="fa-regular fa-plus"></i></span></a>
+            </label>
+
+            <label for="sch03">
+              <a href="#!"><span>2030배낭여행 23기</span>&nbsp&nbsp&nbsp2023.05.14 | in/out 스페인
+              <span><i class="fa-regular fa-plus"></i></span></a>
+            </label>
+
+            <label for="sch04">
+              <a href="#!"><span>2030배낭여행 24기</span>&nbsp&nbsp&nbsp2023.05.28 | 동유럽 여행
+              <span><i class="fa-regular fa-plus"></i></span></a>
+            </label>
+
+            <label for="sch05">
+              <a href="#!"><span>테마여행</span>&nbsp&nbsp&nbsp아이슬란드 오로라여행
+              <span><i class="fa-regular fa-plus"></i></span></a>
+            </label>
+
+          </div>
+        </div>
+      </div>
+    </section><!--sch-->
+
+    <section class="departure_bg">
+      <nav class="departure">
+        <ul class="departure_box">
+
+          <p class="departure_title">여행을 위한 준비</p>
+
+          <li>
+            <a href="#!">
+              <i class="fa-solid fa-question"></i>
+              <p>문의</p>
+            </a>
+          </li>
+      
+          <li>
+            <a href="#!">
+              <i class="fa-solid fa-check"></i>
+              <p>공지사항</p>
+            </a>
+          </li>
+        
+          <li>
+            <a href="#!">
+              <i class="fa-solid fa-gift"></i>
+              <p>이벤트</p>
+            </a>
+          </li>
+        
+          <li>
+            <a href="#!">
+              <i class="fa-solid fa-plane-departure"></i>
+              <p>출발팀게시판</p>
+            </a>
+          </li>
+        
+          <li>
+            <a href="#!">
+              <i class="fa-solid fa-paper-plane"></i>
+              <p>실시간이야기</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </section><!--departure-->
+
+    <section class="introduce">
+
+      <div class="title_box">
+        <div class="title_icon"></div>
+        <div class="title">여행정보&nbsp&nbsp<span style="font-size: 13px;"><a href="#!" style="color: #80a3c3;"><더 알아보기></a></span></div>
+      </div>
+      
+      <ul>
+        <li>
+          <a href="#!">
+            <img src="./images/introduce_01.jpg" alt="로마여행정보">
+            <p>로마 여행정보</p>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            <img src="./images/introduce_02.jpg" alt="피렌체여행정보">
+            <p>피렌체 여행정보</p>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            <img src="./images/introduce_03.jpg" alt="밀라노여행정보">
+            <p>밀라노 여행정보</p>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            <img src="./images/introduce_04.jpg" alt="인터라켄여행정보">
+            <p>인터라켄 여행정보</p>
+          </a>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="#!">
+            <img src="./images/introduce_05.jpg" alt="파리여행정보">
+            <p>파리 여행정보</p>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            <img src="./images/introduce_06.jpg" alt="베니스여행정보">
+            <p>베니스 여행정보</p>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            <img src="./images/introduce_07.jpg" alt="비엔나여행정보">
+            <p>비엔나 여행정보</p>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            <img src="./images/introduce_08.jpg" alt="프라하여행정보">
+            <p>프라하 여행정보</p>
+          </a>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="#!">
+            <img src="./images/introduce_09.jpg" alt="잘츠부르크여행정보">
+            <p>잘츠부르크 여행정보</p>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            <img src="./images/introduce_10.jpg" alt="프랑크푸르트여행정보">
+            <p>프랑크푸르트 여행정보</p>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            <img src="./images/introduce_11.jpg" alt="베를린여행정보">
+            <p>베를린 여행정보</p>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            <img src="./images/introduce_12.jpg" alt="바르셀로나여행정보">
+            <p>바르셀로나 여행정보</p>
+          </a>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="#!">
+            <img src="./images/introduce_13.jpg" alt="그라나다여행정보">
+            <p>그라나다 여행정보</p>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            <img src="./images/introduce_14.jpg" alt="세비야여행정보">
+            <p>세비야 여행정보</p>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            <img src="./images/introduce_15.jpg" alt="마드리드여행정보">
+            <p>마드리드 여행정보</p>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            <img src="./images/introduce_16.jpg" alt="니스여행정보">
+            <p>니스 여행정보</p>
+          </a>
+        </li>
+      </ul>
+    
+    </section><!--introduce-->
+
+    
+
+    <hr/>
+
+    <footer class="footer_box_wing">
+      <div class="footer_box">
+        <nav class="footer_sns">
+          <ul>
+            <li><a href="#!">회사소개</a></li>
+            <li><a href="#!">국외여행</a></li>
+            <li><a href="#!">특별약관</a></li>
+            <li><a href="#!">호텔예약</a></li>
+            <li><a href="#!">이용약관</a></li>
+            <li><a href="#!"><b>개인정보처리방침</b></a></li>
+            <li><a href="#!">여행약관<a></li>
+          </ul>
+
+          <ul>
+            <a href="https://pf.kakao.com/_xnLeTC"><img src="./images/icons/icons_kakao.png" alt="카카오이미지"></a>
+            <a href="https://blog.naver.com/travelvia"><img src="./images/icons/icons_blog.png" alt="블로그이미지"></a>
+            <a href="https://www.youtube.com/channel/UClcE6AykDuL44KZ58_elPSw"><img src="./images/icons/icons_youtube.png" alt="유튜브이미지"></a>
+            <a href="https://www.instagram.com/travelvia_europe/"><img src="./images/icons/icons_insta.png" alt="인스타이미지"></a>
+            <a href="https://www.facebook.com/europegallae"><img src="./images/icons/icons_facebook.png" alt="페이스북이미지"></a>
+          </ul>
+        </nav>
+
+        <nav class="footer_cs">
+          <ul>
+            <p><span class="cs_txt">cs center</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp070-4245-0701</p>
+            <p>AM 09:00 ~ PM 18:00</p>
+            <p>DAY OFF (SATURDAY,SUNDAY,HOLIDAY)</p>
+            <p>E-MAIL : travelvia@naver.com</p>
+          </ul>
+        </nav>
+
+        <nav class="footer_info">
+          <ul>
+            <p>
+              트래블비아 서울특별시 마포구 연희로 11, 5층 BS-524호(동교동, 한국특허정보원빌딩)<br/>
+              사업자 등록번호 697-19-01687 관광 사업자 등록번호 : 제 2022-0000021호<br/>
+              통신판매업 신고번호 : 제 2022-서울마포-1307호
+            </p>
+            <p>
+              Copyright c 2022 트래블비아 All rights reserved.
+            </p>
+          </ul>
+
+          <ul>
+            <select>
+              <option selected>LANGUAGE</option>
+              <option>Korean</option>
+              <option>English</option>
+              <option>Japanese</option>
+              <option>Chines</option>
+            </select>
+          </ul>
+        </nav>
+      </div>
+    </footer><!--footer-->
+
+    
+    <div class="btn_top">top</div>
+    <!--btn_top-->
+
+
+
+    <div class="wing_menu_box">
+      <input type="checkbox" id="wing_chk">
+      <label for="wing_chk"><i class="fa-brands fa-youtube"></i></label>
+      
+      <div class="youtube_box">
+        <iframe width="500" height="400" src="https://www.youtube.com/embed/Fg6hMvwACSA" title="어서오세요~채널VIA 입니다!!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div class="kakao">
+        <a href="#!"><i class="fa-solid fa-comment"></i></a>
+      </div>
+    </div><!--wing_menu-->
+
+  </div><!--wrap--> 
+  
+ 
+
+ 
+ 
+  
+
+  
+  
+</body>
+</html>

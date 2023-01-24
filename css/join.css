@@ -1,0 +1,516 @@
+*{margin: 0; padding: 0;}
+a{color: black; text-decoration: none;}
+li{list-style: none;}
+body{font-family: 'Nanum Gothic', sans-serif;}
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/*---공통클래스---*/
+
+button{
+  height: 30px;
+  background-color: #16193c;
+  color: white;
+  cursor: pointer;
+}
+
+input:focus {outline: 1px solid #80a3c3;}
+
+input{
+  padding-left: 5px;
+  border: 1px solid #ccc;
+}
+
+.title_height{
+  height: 50px;
+  margin-bottom: 30px;
+  line-height: 50px;
+}
+
+.sub_title_height{
+  height: 30px;
+  line-height: 30px;
+}
+
+.s_txt{
+  height: 30px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+
+/*---header_banner---*/
+
+.header_banner{
+  width: 100%; height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 40px;
+  background-color: black;
+}
+
+.header_banner a{
+  color: white;
+}
+
+.header_banner p{
+  display: inline;
+}
+
+.header_banner .banner_icon_close{
+  width: 40px; height: 40px;
+  float: right;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.header_banner .banner_icon_airplane{
+  width: 40px; height: 40px;
+  margin-right: 10px;
+  color: skyblue;
+}
+
+/*-----header----*/
+
+.header{
+  height: 120px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+/*-----header_gnb----*/
+
+.header .header_gnb{
+  width: 1269px; height: 60px;
+  background-color: white;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header .header_gnb .main_logo{
+  width: 199px; height: 60px;
+  float: left;
+  margin-left: 25px;
+}
+
+.header .header_gnb .main_logo img{
+  width: 100%; height: auto;
+}
+
+.header .header_gnb .gnb{
+  width: 400px; height: 60px;
+  float: right;
+}
+
+.header .header_gnb .gnb li{
+  width: 80px; height: 60px;
+  float: left;
+  text-align: center;
+  line-height: 60px;
+  font-size: 12px;
+}
+
+.header .header_gnb .gnb i{
+  font-size: 15px;
+}
+
+#search_chk {display: none;}
+#search_chk ~.search_box{display: none;}
+#search_chk:checked ~.search_box{display: block;}
+
+.header .header_gnb .gnb .search_box{
+  width: 200px; height: 50px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 1px 1px 3px 1px #ccc;
+}
+
+.header .header_gnb .gnb li:nth-child(2) a{
+  color: #ccc;
+}
+
+.header .header_gnb .gnb li :last-child{
+  cursor: pointer;
+}
+
+.header .header_gnb .gnb .search_box input{
+  width: 150px; height: 32px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+/*-----header_lnb----*/
+
+.header .header_lnb .lnb_introduce{
+  display: none;
+}
+
+.header .header_lnb li:first-child:hover .lnb_introduce{
+  display: block;
+}
+
+.header .header_lnb{
+  width: 1269px; height: 60px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.header .header_lnb .lnb_introduce{
+  width: 253.8px; height: 240px;
+}
+
+.header .header_lnb .lnb_introduce li{
+  width: 253.8px; height: 40px;
+  background-color: white;
+  text-align: center;
+  line-height: 40px;
+}
+
+.header .header_lnb>li{
+  width: 253.8px; height: 60px;
+  float: left;
+  text-align: center;
+  line-height: 60px;
+}
+
+.header .header_lnb>li a:hover{
+  color: #ccc;
+}
+
+.header .header_lnb li ul li a:hover{
+  color: #80a3c3;
+}
+
+
+/*---wrap---*/
+
+.wrap{
+  width: 1269px; 
+  margin: 0 auto;
+  margin-bottom: 100px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.wrap .join{
+  width: 1000px;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 100px;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+.wrap .join i{
+  color: #80a3c3;
+}
+
+/*---certi(본인인증)---*/
+
+.wrap .join_box{
+  width: 1269px;
+  margin: 0 auto;
+}
+
+.join_box .certi{
+  width: 600px; height: 325px;
+  margin: 0 auto;
+  border-bottom: 1px solid #999;
+}
+
+.join_box .certi .must_do{
+  text-align: right;
+}
+
+.join_box .certi p{
+  margin-bottom: 10px;
+}
+
+.join_box .certi div{
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.join_box .certi .btn_certi{
+  width: 150px; height: 40px;
+  background-color: #16193c;
+  color: white;
+  font-size: 18px;
+}
+
+
+/*---personal_info(기본정보)---*/
+
+ .join_box .personal_info{
+  width: 600px; height: 1100px;
+  margin: 0 auto;
+  border-bottom: 1px solid #999;
+}
+
+.join_box .personal_info>div{
+  margin-bottom: 40px;
+}
+
+/*---personal_info(기본정보)_이름---*/
+
+.join_box .personal_info .name{
+  height: 60px;
+}
+
+.join_box .personal_info .name input{
+  height: 30px;
+}
+
+/*---personal_info(기본정보)_성별,나이---*/
+
+.join_box .personal_info .gendernage{
+  height: 90px;
+}
+
+.join_box .personal_info .gendernage p{
+  height: 30px;
+}
+
+.join_box .personal_info .gendernage .age{
+  height: 30px;
+}
+
+/*---personal_info(기본정보)_아이디---*/
+
+.join_box .personal_info .id{
+  height: 90px;
+}
+
+.join_box .personal_info .id input{
+  height: 30px;
+}
+
+.join_box .personal_info .id p:last-child{
+  height: 30px;
+  color: #ccc;
+  font-size: 13px;
+}
+
+.join_box .personal_info .id .id_message,
+.join_box .personal_info .pw .pw_message{
+  font-size: 10px;
+  color: red;
+}
+
+/*---personal_info(기본정보)_비밀번호---*/
+
+.join_box .personal_info .pw{
+  height: 90px;
+}
+
+.join_box .personal_info .pw input{
+  height: 30px;
+}
+
+.join_box .personal_info .pw p:last-child{
+  height: 30px;
+  color: #ccc;
+  font-size: 13px;
+}
+
+/*---personal_info(기본정보)_비밀번호 확인---*/
+
+.join_box .personal_info .pw_chk{
+  height: 60px;
+}
+
+.join_box .personal_info .pw_chk input{
+  height: 30px;
+}
+
+/*---personal_info(기본정보)_이메일---*/
+
+.join_box .personal_info .e_mail select{
+  height: 30px;
+}
+
+/*---personal_info(기본정보)_주소---*/
+
+.join_box .personal_info .address{
+  height: 120px;
+}
+
+.join_box .personal_info .address .post_num{
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.join_box .personal_info .address .post_num input{
+  height: 30px;
+}
+
+.join_box .personal_info .address>input{
+  height: 30px;
+  margin-bottom: 10px;  
+}
+
+/*---personal_info(기본정보)_전화번호---*/
+
+.join_box .personal_info .contact_number select{
+  height: 30px;
+}
+
+.join_box .personal_info .contact_number input{
+  height: 30px;
+}
+
+.join_box .personal_info .e_mail input{
+  height: 30px;
+}
+
+
+/*---plus_info---*/
+
+.join_box .plus_info{
+  width: 600px; height: 485px;
+  margin: 0 auto;
+  border-bottom: 1px solid #999;
+}
+
+.join_box .plus_info input{
+  height: 30px;
+}
+
+.join_box .plus_info select{
+  height: 30px;
+}
+
+.join_box .plus_info>div{
+  margin-bottom: 30px;
+}
+
+/*---validity---*/
+
+#validity{display: none;}
+
+#validity:checked ~.validity_btn .down_btn{display: none;}
+#validity:checked ~.validity_btn .up_btn{display: block;}
+#validity ~.validity_btn .down_btn{display: block;}
+#validity ~.validity_btn .up_btn{display: none;}
+
+#validity:checked ~.validity_box{display: block;}
+#validity ~.validity_box{display: none;} 
+
+.join_box .validity{
+  width: 600px; 
+  margin: 0 auto;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.join_box .validity .validity_btn{
+  width: 600px; height: 30px;
+  float: left;
+}
+
+.join_box .validity label{
+  display: block;
+  float: right;
+} 
+
+.btn_final_join{
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.btn_final_join button{
+  width: 150px; height: 40px;
+  margin-left: 600px;
+}
+
+/*---footer---*/
+
+.footer_box_wing{
+  width: 100%; height: 325px;
+  border-top: 1px solid #ccc;
+}
+
+.footer_box_wing .footer_box{
+  width: 1269px; height: 325px;
+  margin: 0 auto;
+}
+
+.footer_box_wing .footer_box .footer_sns{
+  width: 1269px; height: 50px;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+
+.footer_box_wing .footer_box .footer_sns ul:first-child{
+  float: left;
+}
+
+.footer_box_wing .footer_box .footer_sns ul:first-child li{
+  display: inline-block;
+}
+
+.footer_box_wing .footer_box .footer_sns ul:last-child{
+  float: right;
+  padding-top: 9px;
+}
+
+.footer_box_wing .footer_box .footer_sns ul:last-child img{
+  display: inline-block;
+  font-size: 25px;
+}
+
+.footer_box_wing .footer_box .footer_cs{
+  width: 1269px; height: 150px;
+  margin-bottom: 10px;
+}
+
+.footer_box_wing .footer_box .footer_cs .cs_txt{
+  font-size: 35px;
+}
+
+.footer_box_wing .footer_box .footer_cs ul{
+  float: right;
+  margin-top: 30px;
+}
+
+.footer_box_wing .footer_info{
+  width: 1269px; height: 100px;
+  position: relative;
+}
+
+.footer_box_wing .footer_info ul:first-child{
+  float: left;
+}
+
+.footer_box_wing .footer_info ul p:last-child{
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.footer_box_wing .footer_info ul:last-child{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.footer_box_wing .footer_info select{
+  border: 1px solid #16193c;
+  outline: none;
+}
+
+
+
+
+
+
+
+
+

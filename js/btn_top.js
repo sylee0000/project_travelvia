@@ -10,8 +10,6 @@ $(function(){
     }
   })
 
-
-
 //scrollto plugin 사용
 
 $('.btn_top').click(function(e){
